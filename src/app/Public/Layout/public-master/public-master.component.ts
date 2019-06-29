@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenService } from 'src/app/Services/token.service';
 
 @Component({
   selector: 'app-public-master',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PublicMasterComponent implements OnInit {
 
-  constructor() { }
+  public loggedIn : Boolean
+  constructor(private Token: TokenService) { }
 
   ngOnInit() {
+    this.loggedIn = this.Token.loggedIn();
   }
 
 }

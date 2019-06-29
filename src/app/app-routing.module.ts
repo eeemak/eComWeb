@@ -55,9 +55,14 @@ import {LayoutComponent} from './DemoPages/Forms/Elements/layout/layout.componen
 import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 import { LoginComponent } from './Dashboard/Auth/login/login.component';
 import { RegisterComponent } from './Dashboard/Auth/register/register.component';
+import { AuthGuardService } from './Services/auth-guard.service';
+import { GuestGuardService } from './Services/guest-guard.service';
 
 const routes: Routes = [
   {path: '', component: PublicMasterComponent},
+  // Auth
+  {path: 'login', component: LoginComponent, canActivate: [GuestGuardService]},
+  {path: 'register', component: RegisterComponent, canActivate: [GuestGuardService]},
   // {
   //   path: '',
   //   component: HomeComponent,
@@ -65,8 +70,9 @@ const routes: Routes = [
   //   ]
   // },
   {
-    path: 'admin',
+    path: '',
     component: BaseLayoutComponent,
+    canActivate: [AuthGuardService],
     children: [
 
       // Dashboads
@@ -112,22 +118,19 @@ const routes: Routes = [
     ]
 
   },
-  // Auth
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
 
-  {
-    path: '',
-    component: PagesLayoutComponent,
-    children: [
+  // {
+  //   path: '',
+  //   component: PagesLayoutComponent,
+  //   children: [
 
-      // User Pages
+  //     // User Pages
 
-      {path: 'pages/login-boxed', component: LoginBoxedComponent, data: {extraParameter: ''}},
-      {path: 'pages/register-boxed', component: RegisterBoxedComponent, data: {extraParameter: ''}},
-      {path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
-    ]
-  },
+  //     {path: 'pages/login-boxed', component: LoginBoxedComponent, data: {extraParameter: ''}},
+  //     {path: 'pages/register-boxed', component: RegisterBoxedComponent, data: {extraParameter: ''}},
+  //     {path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
+  //   ]
+  // },
   {path: '**', redirectTo: ''}
 ];
 

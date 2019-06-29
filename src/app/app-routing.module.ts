@@ -1,8 +1,9 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import {BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
+// import {BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
 import {PagesLayoutComponent} from './Layout/pages-layout/pages-layout.component';
+import {PublicMasterComponent} from './Public/Layout/public-master/public-master.component';
 
 // DEMO PAGES
 
@@ -51,16 +52,20 @@ import {LayoutComponent} from './DemoPages/Forms/Elements/layout/layout.componen
 // Charts
 
 import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
+import { LoginComponent } from './Dashboard/Auth/login/login.component';
+import { RegisterComponent } from './Dashboard/Auth/register/register.component';
+import { BaseLayoutComponent } from './Layout/base-layout/base-layout.component';
 
 const routes: Routes = [
+  {path: '', component: PublicMasterComponent},
   {
-    path: '',
+    path: 'admin',
     component: BaseLayoutComponent,
     children: [
 
       // Dashboads
-
-      {path: '', component: AnalyticsComponent, data: {extraParameter: 'dashboardsMenu'}},
+      
+      {path: 'dashboard', component: AnalyticsComponent, data: {extraParameter: 'dashboardsMenu'}},
 
       // Elements
 
@@ -101,6 +106,10 @@ const routes: Routes = [
     ]
 
   },
+  // Auth
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
+
   {
     path: '',
     component: PagesLayoutComponent,

@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My ASP.NET Application</title>
+    <!-- <link href="~/Content/Site.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <!-- <link href="~/Content/eShopLogin.css" rel="stylesheet" /> -->
+</head>
+<body>
+  <div class="banner-slider">
+    <div class="rev-slider">
+        <ul>
+            <li class="slide1" data-transition="random">
+                <img src="assets/themes/b2b/images/slide/bg-s1-01.png" alt="" />
+                <!-- <div class="tp-caption lfl" data-x="320" data-y="160" data-start="1000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item2" href="#"><img src="images/slide/bg-s1-02.png" alt="" /></a></div> -->
+                <div class="tp-caption lft" data-x="right" data-y="top" data-start="1500" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item3" href="#"><img src="~/Content/images/slide/bg-s1-03.png" alt="" /></a></div>
+                <div class="tp-caption lfb" data-x="right" data-y="bottom" data-start="2000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item4" href="#"><img src="~/Content/images/slide/bg-s1-04.png" alt="" /></a></div>
+            </li>
+            <li class="slide2" data-transition="random">
+                <img src="~/Content/images/slide/bg-s2-01.png" alt="" />
+                <!-- <div class="tp-caption lfl" data-x="320" data-y="110" data-start="1000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item2" href="#"><img src="images/slide/bg-s2-02.png" alt="" /></a></div> -->
+                <div class="tp-caption lft" data-x="right" data-y="top" data-start="1500" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item3" href="#"><img src="~/Content/images/slide/bg-s2-03.png" alt="" /></a></div>
+                <div class="tp-caption lfb" data-x="right" data-y="bottom" data-start="2000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item4" href="#"><img src="~/Content/images/slide/bg-s2-04.png" alt="" /></a></div>
+            </li>
+            <li class="slide3" data-transition="random">
+                <img src="~/Content/images/slide/bg-s3-01.png" alt="" />
+                <!-- <div class="tp-caption lfl" data-x="320" data-y="110" data-start="1000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item2" href="#"><img src="images/slide/bg-s3-02.png" alt="" /></a></div> -->
+                <div class="tp-caption lft" data-x="right" data-y="top" data-start="1500" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item3" href="#"><img src="~/Content/images/slide/bg-s3-03.png" alt="" /></a></div>
+                <div class="tp-caption lfb" data-x="right" data-y="bottom" data-start="2000" data-speed="1000" data-easing="easeInOutQuint" data-endspeed="300"><a class="item4" href="#"><img src="~/Content/images/slide/bg-s3-04.png" alt="" /></a></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- End Banner Slider -->
+<div class="list-service-box">
+    <div class="container">
+        <div class="inner-list-service">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-thumb">
+                            <a href="#"><img src="~/Content/images/home1/sv1.png" alt="" /></a>
+                        </div>
+                        <div class="service-info">
+                            <h2><a href="#">It's simpler</a></h2>
+                            <p>Lorem Khaled Ipsum is a </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-thumb">
+                            <a href="#"><img src="~/Content/images/home1/sv2.png" alt="" /></a>
+                        </div>
+                        <div class="service-info">
+                            <h2><a href="#">It's safer</a></h2>
+                            <p>Lorem Khaled Ipsum is a </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="service-box">
+                        <div class="service-thumb">
+                            <a href="#"><img src="~/Content/images/home1/sv1.png" alt="" /></a>
+                        </div>
+                        <div class="service-info">
+                            <h2><a href="#">It's faster</a></h2>
+                            <p>Lorem Khaled Ipsum is a </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="close-service-box"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+</div>
+<!-- End List Service -->
+<div class="list-tab-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="title-tab-product">
+                    <h2>products</h2>
+                    <ul>
+                        <li class="active"><a href="#" data-id="bestsale">BEST SELLERS</a></li>
+                        <li><a href="#" data-id="arrival">NEW ARRIVALs</a></li>
+                        <li><a href="#" data-id="popular">most Popular</a></li>
+                        <li><a href="#" data-id="special">special</a></li>
+                        <li><a href="#" data-id="upcomimg">Up coming products!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div class="content-tab-product">
+                    <div id="bestsale" class="tab-pane active">
+                        <div class="product-tab-slider">
+                            <div class="wrap-item">
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="/Home/Details">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/3.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/4.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/15.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/16.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>32%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/18.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>55%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/4.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/5.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>20%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/16.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/20.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/21.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>15%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="arrival" class="tab-pane">
+                        <div class="product-tab-slider">
+                            <div class="wrap-item">
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/5.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/6.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/18.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>32%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/21.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/22.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>55%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/4.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/3.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>20%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/16.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/20.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/21.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>15%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="popular" class="tab-pane">
+                        <div class="product-tab-slider">
+                            <div class="wrap-item">
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/6.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/7.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/18.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/19.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>32%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/22.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/23.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>55%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/4.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/3.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>20%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/16.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/20.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/21.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>15%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="special" class="tab-pane">
+                        <div class="product-tab-slider">
+                            <div class="wrap-item">
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/7.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/8.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/18.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/19.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>32%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/23.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/22.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>55%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/4.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/3.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>20%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/16.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/20.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/21.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>15%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="upcomimg" class="tab-pane">
+                        <div class="product-tab-slider">
+                            <div class="wrap-item">
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/7.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/8.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/18.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/19.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>32%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/23.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/22.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>55%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/4.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/3.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>20%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/16.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="~/Content/images/photos/extras/20.jpg">
+                                                <img class="second-thumb" alt="" src="~/Content/images/photos/extras/21.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                                    <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                                    <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                            </div>
+                                        </div>
+                                        <div class="percent-saleoff">
+                                            <span><label>15%</label> OFF</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Content Tab -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End List Tab Product -->
+<div class="main-content-home">
+    <div class="container">
+        <div class="clearfix category-product-featured red-box">
+            <div class="category-home-total">
+                <div class="category-home-label">
+                    <a href="#">
+                        <img src="~/Content/images/home1/icon-box1.png" alt="" />
+                        <span>Fashion</span>
+                    </a>
+                </div>
+                <!-- End Label -->
+                <div class="category-filter-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-best.png" alt="" />
+                                    <span>Best seller</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-view.png" alt="" />
+                                    <span>Most view</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-special.png" alt="" />
+                                    <span>Special</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-new.png" alt="" />
+                                    <span>New arrivals</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-review.png" alt="" />
+                                    <span>Most reviews</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-sale.png" alt="" />
+                                    <span>Sale</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                    </div>
+                </div>
+                <!-- End Filter -->
+                <div class="list-child-category">
+                    <ul>
+                        <li><a href="#">Street Style</a></li>
+                        <li><a href="#">Designer</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <!-- End List Tab Category -->
+                <div class="category-brand-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn1.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn2.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn3.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn4.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn5.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Category Brand Slider -->
+            </div>
+            <div class="banner-home-category">
+                <div class="item-adv-simple">
+                    <a href="#"><img src="~/Content/images/home1/thumb-box1.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="featured-product-category">
+                <div class="wrap-item">
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/11.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/12.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/17.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/16.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/18.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/19.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/1.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/2.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/3.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/4.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/22.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/23.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+            </div>
+        </div>
+        <!-- End Red Box -->
+        <div class="clearfix category-product-featured yellow-box">
+            <div class="category-home-total">
+                <div class="category-home-label">
+                    <a href="#">
+                        <img src="~/Content/images/home1/icon-box2.png" alt="" />
+                        <span>furniture</span>
+                    </a>
+                </div>
+                <!-- End Label -->
+                <div class="category-filter-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-special.png" alt="" />
+                                    <span>Special</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-sale.png" alt="" />
+                                    <span>Sale</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-best.png" alt="" />
+                                    <span>Best seller</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-view.png" alt="" />
+                                    <span>Most view</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-new.png" alt="" />
+                                    <span>New arrivals</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-review.png" alt="" />
+                                    <span>Most reviews</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                    </div>
+                </div>
+                <!-- End Filter -->
+                <div class="list-child-category">
+                    <ul>
+                        <li><a href="#">Bathtime Goods</a></li>
+                        <li><a href="#">Shower Curtains</a></li>
+                        <li><a href="#">Blankets</a></li>
+                        <li><a href="#">Step Stools</a></li>
+                    </ul>
+                </div>
+                <!-- End List Tab Category -->
+                <div class="category-brand-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn4.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn2.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn3.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn6.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn5.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Category Brand Slider -->
+            </div>
+            <div class="banner-home-category">
+                <div class="item-adv-simple">
+                    <a href="#"><img src="~/Content/images/home1/thumb-box2.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="featured-product-category">
+                <div class="wrap-item">
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/furniture/21.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/furniture/9.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Stretch Dining Chair </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/furniture/27.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/furniture/26.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Hedgehogs multicolour </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/furniture/24.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/furniture/23.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Light Classic</a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/furniture/5.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/furniture/6.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/7.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/8.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/extras/9.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/extras/10.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+            </div>
+        </div>
+        <!-- End Yellow Box -->
+        <div class="box-adv-col2">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-adv-simple">
+                        <a href="#"><img src="~/Content/images/home1/ad1.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-adv-simple">
+                        <a href="#"><img src="~/Content/images/home1/ad2.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Box Adv Col2 -->
+        <div class="clearfix category-product-featured pink-box">
+            <div class="category-home-total">
+                <div class="category-home-label">
+                    <a href="#">
+                        <img src="~/Content/images/home1/icon-box3.png" alt="" />
+                        <span>food & Drink</span>
+                    </a>
+                </div>
+                <!-- End Label -->
+                <div class="category-filter-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-new.png" alt="" />
+                                    <span>New arrivals</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-view.png" alt="" />
+                                    <span>Most view</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-special.png" alt="" />
+                                    <span>Special</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-sale.png" alt="" />
+                                    <span>Sale</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-best.png" alt="" />
+                                    <span>Best seller</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-review.png" alt="" />
+                                    <span>Most reviews</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                    </div>
+                </div>
+                <!-- End Filter -->
+                <div class="list-child-category">
+                    <ul>
+                        <li><a href="#">Pizza</a></li>
+                        <li><a href="#">Cake</a></li>
+                        <li><a href="#">Drink</a></li>
+                    </ul>
+                </div>
+                <!-- End List Tab Category -->
+                <div class="category-brand-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn12.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn2.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn3.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn6.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn5.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Category Brand Slider -->
+            </div>
+            <div class="banner-home-category">
+                <div class="item-adv-simple">
+                    <a href="#"><img src="~/Content/images/home1/thumb-box3.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="featured-product-category">
+                <div class="wrap-item">
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/food/5.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/food/12.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Dots Bakery Gift </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/food/2.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/food/11.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Cookie Packaging </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/food/6.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/food/10.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Bakery Macaron</a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/food/1.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/food/2.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/food/3.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/food/4.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/food/7.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/food/8.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+            </div>
+        </div>
+        <!-- End Pink Box -->
+        <div class="clearfix category-product-featured blue-box">
+            <div class="category-home-total">
+                <div class="category-home-label">
+                    <a href="#">
+                        <img src="~/Content/images/home1/icon-box4.png" alt="" />
+                        <span>Electronics</span>
+                    </a>
+                </div>
+                <!-- End Label -->
+                <div class="category-filter-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-view.png" alt="" />
+                                    <span>Most view</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-review.png" alt="" />
+                                    <span>Most reviews</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-new.png" alt="" />
+                                    <span>New arrivals</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-special.png" alt="" />
+                                    <span>Special</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-sale.png" alt="" />
+                                    <span>Sale</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-best.png" alt="" />
+                                    <span>Best seller</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                    </div>
+                </div>
+                <!-- End Filter -->
+                <div class="list-child-category">
+                    <ul>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <!-- End List Tab Category -->
+                <div class="category-brand-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn11.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn2.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn3.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn6.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn5.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Category Brand Slider -->
+            </div>
+            <div class="banner-home-category">
+                <div class="item-adv-simple">
+                    <a href="#"><img src="~/Content/images/home1/thumb-box4.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="featured-product-category">
+                <div class="wrap-item">
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/mobile/3.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/mobile/4.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Tablet Samsung </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/mobile/1.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/mobile/2.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">iPad 4 16Gb HDM </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/mobile/0.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/mobile/9.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Galaxy SIV</a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/mobile/5.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/mobile/6.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/mobile/7.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/mobile/8.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/mobile/11.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/mobile/12.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+            </div>
+        </div>
+        <!-- End Blue Box -->
+        <div class="box-adv-col2">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-adv-simple">
+                        <a href="#"><img src="~/Content/images/home1/ad3.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="item-adv-simple">
+                        <a href="#"><img src="~/Content/images/home1/ad4.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Box Adv Col2 -->
+        <div class="clearfix category-product-featured green-box">
+            <div class="category-home-total">
+                <div class="category-home-label">
+                    <a href="#">
+                        <img src="~/Content/images/home1/icon-box5.png" alt="" />
+                        <span>sport</span>
+                    </a>
+                </div>
+                <!-- End Label -->
+                <div class="category-filter-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-best.png" alt="" />
+                                    <span>Best seller</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-view.png" alt="" />
+                                    <span>Most view</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-new.png" alt="" />
+                                    <span>New arrivals</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-special.png" alt="" />
+                                    <span>Special</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-sale.png" alt="" />
+                                    <span>Sale</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-review.png" alt="" />
+                                    <span>Most reviews</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                    </div>
+                </div>
+                <!-- End Filter -->
+                <div class="list-child-category">
+                    <ul>
+                        <li><a href="#">Boxing</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Football</a></li>
+                    </ul>
+                </div>
+                <!-- End List Tab Category -->
+                <div class="category-brand-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn10.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn12.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn13.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn16.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn15.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Category Brand Slider -->
+            </div>
+            <div class="banner-home-category">
+                <div class="item-adv-simple">
+                    <a href="#"><img src="~/Content/images/home1/thumb-box5.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="featured-product-category">
+                <div class="wrap-item">
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/sport/15.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/sport/2.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen</a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/sport/16.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/sport/6.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/sport/7.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/sport/6.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen</a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/sport/1.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/sport/2.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/sport/18.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/sport/20.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/sport/23.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/sport/24.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+            </div>
+        </div>
+        <!-- End Green Box -->
+        <div class="clearfix category-product-featured violet-box">
+            <div class="category-home-total">
+                <div class="category-home-label">
+                    <a href="#">
+                        <img src="~/Content/images/home1/icon-box6.png" alt="" />
+                        <span>Jewelry</span>
+                    </a>
+                </div>
+                <!-- End Label -->
+                <div class="category-filter-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-best.png" alt="" />
+                                    <span>Best seller</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-view.png" alt="" />
+                                    <span>Most view</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-review.png" alt="" />
+                                    <span>Most reviews</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-new.png" alt="" />
+                                    <span>New arrivals</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-special.png" alt="" />
+                                    <span>Special</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                        <div class="item">
+                            <div class="item-filter">
+                                <a href="#">
+                                    <img src="~/Content/images/home1/icon-sale.png" alt="" />
+                                    <span>Sale</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Item -->
+                    </div>
+                </div>
+                <!-- End Filter -->
+                <div class="list-child-category">
+                    <ul>
+                        <li><a href="#">Necklaces & Pendants</a></li>
+                        <li><a href="#">Earrings</a></li>
+                        <li><a href="#">Rings</a></li>
+                    </ul>
+                </div>
+                <!-- End List Tab Category -->
+                <div class="category-brand-slider">
+                    <div class="wrap-item">
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn14.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn2.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn3.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn6.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-category-brand">
+                                <a href="#"><img src="~/Content/images/home1/pn5.png" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Category Brand Slider -->
+            </div>
+            <div class="banner-home-category">
+                <div class="item-adv-simple">
+                    <a href="#"><img src="~/Content/images/home1/thumb-box6.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="featured-product-category">
+                <div class="wrap-item">
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/jewelry/13-13.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/jewelry/14-14.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Tablet Samsung </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/jewelry/13.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/jewelry/16.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">iPad 4 16Gb HDM </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/jewelry/11.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/jewelry/11-11.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Galaxy SIV</a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/jewelry/23.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/jewelry/23-23.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/jewelry/24.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/jewelry/24-24.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>15%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                    <div class="item">
+                        <div class="item-category-featured-product">
+                            <div class="product-thumb">
+                                <a href="#" class="product-thumb-link">
+                                    <img class="first-thumb" src="~/Content/images/photos/jewelry/15.jpg" alt="" />
+                                    <img class="second-thumb" src="~/Content/images/photos/jewelry/25-25.jpg" alt="" />
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="compare-link"><i class="fa fa-toggle-on"></i></a>
+                                        <a href="#" class="quickview-link"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Women's Woolen </a></h3>
+                                <div class="info-price">
+                                    <span>$59.52 </span>
+                                    <del>$17.96</del>
+                                </div>
+                                <div class="product-rating">
+                                    <div class="inner-rating" style="width:100%"></div>
+                                    <span>(3s)</span>
+                                </div>
+                            </div>
+                            <div class="percent-saleoff">
+                                <span><label>35%</label>OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+            </div>
+        </div>
+        <!-- End Violet Box -->
+        <div class="super-deal">
+            <div class="super-deal-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="supper-deal-title">
+                            <h2>super deals</h2>
+                            <p> Save BIG on top quality items! Updated daily.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="super-deal-countdown" data-date="12/15/2016"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="super-deal-content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item-deal-product">
+                            <div class="product-thumb">
+                                <a class="product-thumb-link" href="#">
+                                    <img class="first-thumb" alt="" src="~/Content/images/photos/furniture/5.jpg">
+                                    <img class="second-thumb" alt="" src="~/Content/images/photos/furniture/6.jpg">
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a class="wishlist-link" href="#"><i class="fa fa-heart-o"></i></a>
+                                        <a class="compare-link" href="#"><i class="fa fa-toggle-on"></i></a>
+                                        <a class="quickview-link" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a class="addcart-link" href="#"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Pok Chair Classicle</a></h3>
+                                <p class="desc">Lorem Khaled Ipsum is a major key to suc cess. Another one. </p>
+                                <div class="info-price-deal">
+                                    <span>$59.52</span> <label>-30%</label>
+                                    <del>$77.96</del>
+                                </div>
+                                <div class="deal-shop-social">
+                                    <a href="#" class="deal-shop-link">shop now</a>
+                                    <div class="social-deal social-network">
+                                        <ul>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s1.png"></a></li>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s2.png"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item-deal-product">
+                            <div class="product-thumb">
+                                <a class="product-thumb-link" href="#">
+                                    <img class="first-thumb" alt="" src="~/Content/images/photos/extras/16.jpg">
+                                    <img class="second-thumb" alt="" src="~/Content/images/photos/extras/17.jpg">
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a class="wishlist-link" href="#"><i class="fa fa-heart-o"></i></a>
+                                        <a class="compare-link" href="#"><i class="fa fa-toggle-on"></i></a>
+                                        <a class="quickview-link" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a class="addcart-link" href="#"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Fashion Mangto</a></h3>
+                                <p class="desc">Lorem Khaled Ipsum is a major key to suc cess. Another one. </p>
+                                <div class="info-price-deal">
+                                    <span>$59.52</span> <label>-30%</label>
+                                    <del>$97.96</del>
+                                </div>
+                                <div class="deal-shop-social">
+                                    <a href="#" class="deal-shop-link">shop now</a>
+                                    <div class="social-deal social-network">
+                                        <ul>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s1.png"></a></li>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s2.png"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item-deal-product">
+                            <div class="product-thumb">
+                                <a class="product-thumb-link" href="#">
+                                    <img class="first-thumb" alt="" src="~/Content/images/photos/sport/6.jpg">
+                                    <img class="second-thumb" alt="" src="~/Content/images/photos/sport/7.jpg">
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a class="wishlist-link" href="#"><i class="fa fa-heart-o"></i></a>
+                                        <a class="compare-link" href="#"><i class="fa fa-toggle-on"></i></a>
+                                        <a class="quickview-link" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a class="addcart-link" href="#"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">T-Shirt Sport</a></h3>
+                                <p class="desc">Lorem Khaled Ipsum is a major key to suc cess. Another one. </p>
+                                <div class="info-price-deal">
+                                    <span>$59.52</span> <label>-30%</label>
+                                    <del>$87.96</del>
+                                </div>
+                                <div class="deal-shop-social">
+                                    <a href="#" class="deal-shop-link">shop now</a>
+                                    <div class="social-deal social-network">
+                                        <ul>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s1.png"></a></li>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s2.png"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item-deal-product">
+                            <div class="product-thumb">
+                                <a class="product-thumb-link" href="#">
+                                    <img class="first-thumb" alt="" src="~/Content/images/photos/extras/13.jpg">
+                                    <img class="second-thumb" alt="" src="~/Content/images/photos/extras/14.jpg">
+                                </a>
+                                <div class="product-info-cart">
+                                    <div class="product-extra-link">
+                                        <a class="wishlist-link" href="#"><i class="fa fa-heart-o"></i></a>
+                                        <a class="compare-link" href="#"><i class="fa fa-toggle-on"></i></a>
+                                        <a class="quickview-link" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <a class="addcart-link" href="#"><i class="fa fa-shopping-basket"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="title-product"><a href="#">Bag Goodscol model</a></h3>
+                                <p class="desc">Lorem Khaled Ipsum is a major key to suc cess. Another one. </p>
+                                <div class="info-price-deal">
+                                    <span>$59.52</span> <label>-30%</label>
+                                    <del>$77.96</del>
+                                </div>
+                                <div class="deal-shop-social">
+                                    <a href="#" class="deal-shop-link">shop now</a>
+                                    <div class="social-deal social-network">
+                                        <ul>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s1.png"></a></li>
+                                            <li><a href="#"><img alt="" src="~/Content/images/home1/s2.png"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="supper-deal.html" class="view-all-deal" data-hover="View All"><span>View All</span></a>
+            </div>
+        </div>
+        <!-- End Super Deal -->
+        <div class="box-adv-col1">
+            <div class="item-adv-simple">
+                <a href="#"><img alt="" src="~/Content/images/home1/ad5.png"></a>
+            </div>
+        </div>
+        <!-- End Box Adv Col1 -->
+        <div class="list-partner clearfix">
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn1.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn2.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn3.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn4.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn5.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn6.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn7.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn8.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn9.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn10.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn11.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn12.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn13.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn14.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn15.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn16.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn17.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn18.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn19.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn20.png" alt="" /></a>
+            <a href="#" class="partner-link"><img src="~/Content/images/home1/pn21.png" alt="" /></a>
+        </div>
+    </div>
+</div>
+<!-- End Main Content Home -->
+ 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>

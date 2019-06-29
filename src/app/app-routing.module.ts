@@ -1,7 +1,8 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-// import {BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
+import {HomeComponent} from './components/home.component';
+import {BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
 import {PagesLayoutComponent} from './Layout/pages-layout/pages-layout.component';
 import {PublicMasterComponent} from './Public/Layout/public-master/public-master.component';
 
@@ -54,10 +55,15 @@ import {LayoutComponent} from './DemoPages/Forms/Elements/layout/layout.componen
 import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 import { LoginComponent } from './Dashboard/Auth/login/login.component';
 import { RegisterComponent } from './Dashboard/Auth/register/register.component';
-import { BaseLayoutComponent } from './Layout/base-layout/base-layout.component';
 
 const routes: Routes = [
   {path: '', component: PublicMasterComponent},
+  // {
+  //   path: '',
+  //   component: HomeComponent,
+  //   children: [
+  //   ]
+  // },
   {
     path: 'admin',
     component: BaseLayoutComponent,

@@ -24,6 +24,7 @@ import {ChartsModule} from 'ng2-charts';
 
 // LAYOUT
 
+import {HomeComponent} from './components/home.component';
 import {BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
 import {PagesLayoutComponent} from './Layout/pages-layout/pages-layout.component';
 import {PageTitleComponent} from './Layout/Components/page-title/page-title.component';
@@ -114,6 +115,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     // LAYOUT
 
     AppComponent,
+    HomeComponent,
     BaseLayoutComponent,
     PagesLayoutComponent,
     PageTitleComponent,

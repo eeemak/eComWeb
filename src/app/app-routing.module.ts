@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
+import {HomeComponent} from './components/home.component';
 import {BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
 import {PagesLayoutComponent} from './Layout/pages-layout/pages-layout.component';
 
@@ -54,6 +55,11 @@ import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: HomeComponent,
+    children: [
+    ]
+  },{
     path: '',
     component: BaseLayoutComponent,
     children: [

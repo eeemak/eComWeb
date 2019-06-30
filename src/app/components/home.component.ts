@@ -1,9 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {Color} from 'ng2-charts/ng2-charts';
+import { NATIVE } from '@angular/core/src/render3/interfaces/container';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  styleUrls:['./home.component.css'
+  ,'../../assets/css/font-awesome.min.css'
+  ,'../../assets/css/font-linearicons.css'
+,'../../assets/css/bootstrap/css/bootstrap.min.css'
+,'../../assets/css/jquery.fancybox.css'
+,'../../assets/css/jquery-ui.css'
+,'../../assets/css/owl.carousel.css'
+,'../../assets/css/owl.transitions.css'
+,'../../assets/css/owl.theme.css'
+,'../../assets/css/script/slideshow/settings.css'
+,'../../assets/css/theme.css'
+// ,'../../assets/css/responsive.css'
+,'../../assets/css/eShopCommon.css'
+],
+  encapsulation:ViewEncapsulation.Native
 })
 export class HomeComponent implements OnInit {
 

@@ -59,7 +59,7 @@ import { AuthGuardService } from './Services/auth-guard.service';
 import { GuestGuardService } from './Services/guest-guard.service';
 
 const routes: Routes = [
-  {path: '', component: PublicMasterComponent},
+  {path: '', component: HomeComponent},
   // Auth
   {path: 'login', component: LoginComponent, canActivate: [GuestGuardService]},
   {path: 'register', component: RegisterComponent, canActivate: [GuestGuardService]},

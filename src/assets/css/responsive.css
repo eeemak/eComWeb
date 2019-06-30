@@ -17,14 +17,14 @@
     .main-nav.main-nav8 { margin: 0 }
     .content-top8 .box-trending8 { margin: 0 }
     .featured-product2 .main-featured-product::after { display: none }
-    .featured-product2 .adv-featured-product { margin-right: 0px; (; margin-right: 1px; ) }
+    .featured-product2 .adv-featured-product { margin-right: 0px; margin-right: 1px; }
     .item-blog5 .from-blog-thumb a { width: 70px }
     .hot-deal-tab-slider.hot-deal-tab-slider12 { margin-top: 80px }
     .content-popular11 .popular-cat-title a { line-height: 40px; padding: 0 20px }
     .box-category10 .item-large-cat-hover { padding: 21px 20px }
     .list-trending8 .product-info3 .desc { display: none }
     .featured-product2 .product-info-cart, .trending-thumb3 a.addcart-link { display: none }
-    .featured-product-cat .main-featured-left .item-featured-product { min-height: auto; (; min-height: 220px; ) }
+    .featured-product-cat .main-featured-left .item-featured-product { min-height: auto;  min-height: 220px; }
     .featured-product-cat  .featured-list-brand a { margin: auto; max-width: 150px }
     .footer-contact6 .footer-box-contact { margin-bottom: 20px }
     .slider-home2 .item-product-bestseller { padding: 24px 0 }

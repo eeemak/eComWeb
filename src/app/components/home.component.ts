@@ -16,7 +16,7 @@ import { NATIVE } from '@angular/core/src/render3/interfaces/container';
 ,'../../assets/css/owl.theme.css'
 ,'../../assets/css/script/slideshow/settings.css'
 ,'../../assets/css/theme.css'
-// ,'../../assets/css/responsive.css'
+,'../../assets/css/responsive.css'
 ,'../../assets/css/eShopCommon.css'
 ],
   encapsulation:ViewEncapsulation.Native

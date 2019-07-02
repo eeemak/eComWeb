@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ElementRef } from '@angular/core';
 import {Color} from 'ng2-charts/ng2-charts';
 import { NATIVE } from '@angular/core/src/render3/interfaces/container';
-
+import * as $ from "jquery"; 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,7 +19,7 @@ import { NATIVE } from '@angular/core/src/render3/interfaces/container';
 ,'../../assets/css/responsive.css'
 ,'../../assets/css/eShopCommon.css'
 ],
-  encapsulation:ViewEncapsulation.Native
+  // encapsulation:ViewEncapsulation.Native
 })
 export class HomeComponent implements OnInit {
 
@@ -168,7 +168,9 @@ export class HomeComponent implements OnInit {
     maintainAspectRatio: false
   };
 
-  ngOnInit() {
-  }
+  ngOnInit(): void {
+
+
+      }
 
 }

@@ -5,21 +5,21 @@ import * as $ from "jquery";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls:['./home.component.css'
-  ,'../../assets/css/font-awesome.min.css'
-  ,'../../assets/css/font-linearicons.css'
-,'../../assets/css/bootstrap/css/bootstrap.min.css'
-,'../../assets/css/jquery.fancybox.css'
-,'../../assets/css/jquery-ui.css'
-,'../../assets/css/owl.carousel.css'
-,'../../assets/css/owl.transitions.css'
-,'../../assets/css/owl.theme.css'
-,'../../assets/css/script/slideshow/settings.css'
-,'../../assets/css/theme.css'
-,'../../assets/css/responsive.css'
-,'../../assets/css/eShopCommon.css'
-],
-  // encapsulation:ViewEncapsulation.Native
+//   styleUrls:['./home.component.css'
+//   ,'../../assets/css/font-awesome.min.css'
+//   ,'../../assets/css/font-linearicons.css'
+// ,'../../assets/css/bootstrap/css/bootstrap.min.css'
+// ,'../../assets/css/jquery.fancybox.css'
+// ,'../../assets/css/jquery-ui.css'
+// ,'../../assets/css/owl.carousel.css'
+// ,'../../assets/css/owl.transitions.css'
+// ,'../../assets/css/owl.theme.css'
+// ,'../../assets/css/script/slideshow/settings.css'
+// ,'../../assets/css/theme.css'
+// ,'../../assets/css/responsive.css'
+// ,'../../assets/css/eShopCommon.css'
+// ],
+encapsulation:ViewEncapsulation.Native
 })
 export class HomeComponent implements OnInit {
 

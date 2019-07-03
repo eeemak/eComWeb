@@ -5,7 +5,6 @@ import * as $ from "jquery";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-encapsulation:ViewEncapsulation.Native
 })
 export class HomeComponent implements OnInit {
 

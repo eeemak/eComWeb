@@ -1,7 +1,7 @@
 import {Component, HostBinding} from '@angular/core';
 import {select} from '@angular-redux/store';
 import {Observable} from 'rxjs';
-import {ThemeOptions} from '../../../theme-options';
+import {ThemeOptions} from '../../../ThemeOptions/theme-options';
 
 @Component({
   selector: 'app-header',

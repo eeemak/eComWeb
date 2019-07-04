@@ -24,15 +24,25 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets/images",
-              "src/assets/css",
-              "src/assets/js"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss",
               "./node_modules/font-awesome/scss/font-awesome.scss"
             ],
             "scripts": [
+              "./src/assets/js/jquery-1.10.2.min.js",
+              "./src/assets/js/bootstrap.min.js",
+              "./src/assets/js/jquery.fancybox.js",
+              "./src/assets/js/jquery-ui.js",
+              "./src/assets/js/owl.carousel.js",
+              "./src/assets/js/jquery.jcarousellite.min.js",
+              "./src/assets/js/jquery.elevatezoom.js",
+              "./src/assets/js/TimeCircles.js",
+              "./src/assets/js/slideshow/jquery.themepunch.revolution.js",
+              "./src/assets/js/slideshow/jquery.themepunch.plugins.min.js",
+              "./src/assets/js/theme.js",
+              "./src/assets/js/eshop.js"
             ],
             "es5BrowserSupport": true
           },

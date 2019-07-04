@@ -71,7 +71,6 @@ const routes: Routes = [
   {
     path: '',
     component: BaseLayoutComponent,
-    canActivate: [AuthGuardService],
     children: [
 
       // Dashboads

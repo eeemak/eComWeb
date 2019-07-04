@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ThemeOptions} from '../../../../../theme-options';
+import {ThemeOptions} from '../../../../../ThemeOptions/theme-options';
 import { AuthService } from 'src/app/Services/auth.service';
 import { Router } from '@angular/router';
 import { TokenService } from 'src/app/Services/token.service';

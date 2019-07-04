@@ -2,11 +2,13 @@ import { Component, OnInit, ViewEncapsulation, ElementRef } from '@angular/core'
 import {Color} from 'ng2-charts/ng2-charts';
 import { NATIVE } from '@angular/core/src/render3/interfaces/container';
 import * as $ from "jquery"; 
+
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-public-master',
+  templateUrl: './public-master.component.html',
+  styleUrls: ['./public-master.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class PublicMasterComponent implements OnInit {
 
   heading = 'Home Dashboard';
   subheading = 'This is an example dashboard created using build-in elements and components.';
@@ -156,6 +158,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
 
-      }
-
+  }
 }

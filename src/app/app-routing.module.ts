@@ -1,10 +1,9 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import {HomeComponent} from './components/home.component';
-import {BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
-import {PagesLayoutComponent} from './Layout/pages-layout/pages-layout.component';
-import {PublicMasterComponent} from './Public/Layout/public-master/public-master.component';
+import {BaseLayoutComponent} from './Components/AdminDashboard/Layout/base-layout/base-layout.component';
+import {PagesLayoutComponent} from './Components/AdminDashboard/Layout/pages-layout/pages-layout.component';
+import {PublicMasterComponent} from './Components/PublicSite/Layout/public-master/public-master.component';
 
 // DEMO PAGES
 
@@ -53,22 +52,22 @@ import {LayoutComponent} from './DemoPages/Forms/Elements/layout/layout.componen
 // Charts
 
 import {ChartjsComponent} from './DemoPages/Charts/chartjs/chartjs.component';
-import { LoginComponent } from './Dashboard/Auth/login/login.component';
-import { RegisterComponent } from './Dashboard/Auth/register/register.component';
+import { LoginComponent } from './Components/AdminDashboard/Auth/login/login.component';
+import { RegisterComponent } from './Components/AdminDashboard/Auth/register/register.component';
 import { AuthGuardService } from './Services/auth-guard.service';
 import { GuestGuardService } from './Services/guest-guard.service';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', component: PublicMasterComponent},
   // Auth
-  {path: 'login', component: LoginComponent, canActivate: [GuestGuardService]},
-  {path: 'register', component: RegisterComponent, canActivate: [GuestGuardService]},
-  // {
-  //   path: '',
-  //   component: HomeComponent,
-  //   children: [
-  //   ]
-  // },
+  {
+    path: 'admin',
+    component: PagesLayoutComponent,
+    children: [
+      {path: '', component: LoginBoxedComponent, data: {extraParameter: ''}},
+      {path: 'register', component: RegisterBoxedComponent, data: {extraParameter: ''}},
+    ]
+  },
   {
     path: '',
     component: BaseLayoutComponent,
@@ -119,18 +118,18 @@ const routes: Routes = [
 
   },
 
-  // {
-  //   path: '',
-  //   component: PagesLayoutComponent,
-  //   children: [
+  {
+    path: '',
+    component: PagesLayoutComponent,
+    children: [
 
-  //     // User Pages
+      // User Pages
 
-  //     {path: 'pages/login-boxed', component: LoginBoxedComponent, data: {extraParameter: ''}},
-  //     {path: 'pages/register-boxed', component: RegisterBoxedComponent, data: {extraParameter: ''}},
-  //     {path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
-  //   ]
-  // },
+      {path: 'pages/login-boxed', component: LoginBoxedComponent, data: {extraParameter: ''}},
+      {path: 'pages/register-boxed', component: RegisterBoxedComponent, data: {extraParameter: ''}},
+      {path: 'pages/forgot-password-boxed', component: ForgotPasswordBoxedComponent, data: {extraParameter: ''}},
+    ]
+  },
   {path: '**', redirectTo: ''}
 ];
 

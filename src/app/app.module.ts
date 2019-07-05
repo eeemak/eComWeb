@@ -19,6 +19,7 @@ import {RegisterBoxedComponent} from './DemoPages/UserPages/register-boxed/regis
 
 
 import { PublicMasterComponent } from './Components/PublicSite/Layout/public-master/public-master.component';
+import { PageNotFoundComponent } from './Components/PublicSite/Layout/public-master/page-not-found.component';
 import { LoginComponent } from './Components/AdminDashboard/Auth/login/login.component';
 import { RegisterComponent } from './Components/AdminDashboard/Auth/register/register.component';
 
@@ -38,6 +39,7 @@ import { RegisterComponent } from './Components/AdminDashboard/Auth/register/reg
 
    
     PublicMasterComponent,
+    PageNotFoundComponent,
     LoginComponent,
     RegisterComponent,
   ],

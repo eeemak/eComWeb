@@ -43,15 +43,16 @@ import { RegisterComponent } from './Components/AdminDashboard/Auth/register/reg
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AdminDashboardModule,
+
     BrowserAnimationsModule,
     CommonModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    AppRoutingModule,
   
 
-    AdminDashboardModule,
   ],
   providers: [
     ConfigActions,

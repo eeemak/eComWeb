@@ -6,7 +6,6 @@ import * as $ from "jquery";
 @Component({
   selector: 'app-public-master',
   templateUrl: './public-master.component.html',
-  styleUrls: ['./public-master.component.scss']
   styleUrls: ['./public-master.component.scss'],
 })
 export class PublicMasterComponent implements OnInit {
